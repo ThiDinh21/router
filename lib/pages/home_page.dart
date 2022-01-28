@@ -1,5 +1,5 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:router/router/app_router.dart' as router;
+import 'package:router/router/app_router.gr.dart' as router;
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 

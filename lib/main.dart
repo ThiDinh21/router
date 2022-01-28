@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:router/router/app_router.dart';
+import 'package:router/router/app_router.gr.dart';
 
 void main() => runApp(MyApp());
 
