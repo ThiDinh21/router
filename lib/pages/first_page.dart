@@ -12,8 +12,10 @@ class FirstPage extends StatelessWidget {
           SliverAppBar(
             expandedHeight: MediaQuery.of(context).size.height * 0.5,
             flexibleSpace: FlexibleSpaceBar(
-              background: SizedBox.square(
-                dimension: MediaQuery.of(context).size.width,
+              background: Container(
+                height: MediaQuery.of(context).size.width,
+                width: MediaQuery.of(context).size.width,
+								color: Colors.white,
                 child: Hero(
                   tag: 1,
                   child: CachedNetworkImage(
