@@ -7,9 +7,18 @@ part 'app_router.gr.dart';
 
 @MaterialAutoRouter(
   replaceInRouteName: 'Page,Route',
-  routes: [
-    MaterialRoute(page: HomePage, initial: true),
-    MaterialRoute(page: FirstPage),
+  routes: <CustomRoute>[
+    CustomRoute(
+      page: HomePage,
+      initial: true,
+      transitionsBuilder: TransitionsBuilders.slideBottom,
+      durationInMilliseconds: 400,
+    ),
+    CustomRoute(
+      page: FirstPage,
+      transitionsBuilder: TransitionsBuilders.slideBottom,
+      durationInMilliseconds: 400,
+    ),
   ],
 )
 // extend the generated private router

@@ -18,12 +18,22 @@ class _$AppRouter extends RootStackRouter {
   @override
   final Map<String, PageFactory> pagesMap = {
     HomeRoute.name: (routeData) {
-      return MaterialPageX<dynamic>(
-          routeData: routeData, child: const HomePage());
+      return CustomPage<dynamic>(
+          routeData: routeData,
+          child: const HomePage(),
+          transitionsBuilder: TransitionsBuilders.slideBottom,
+          durationInMilliseconds: 400,
+          opaque: true,
+          barrierDismissible: false);
     },
     FirstRoute.name: (routeData) {
-      return MaterialPageX<dynamic>(
-          routeData: routeData, child: const FirstPage());
+      return CustomPage<dynamic>(
+          routeData: routeData,
+          child: const FirstPage(),
+          transitionsBuilder: TransitionsBuilders.slideBottom,
+          durationInMilliseconds: 400,
+          opaque: true,
+          barrierDismissible: false);
     }
   };
 
